@@ -55,3 +55,30 @@ html.dark .cta-button {
 html.dark .cta-button:hover:not(:disabled) {
   background: #e9ecef;
 }
+
+/* Dark mode TOC */
+html.dark .toc {
+  background: #2d2d2d;
+  border-color: #404040;
+  border-left-color: #ff5533;
+}
+
+html.dark .toc h2 {
+  color: #f8f9fa;
+}
+
+html.dark .toc a {
+  color: #adb5bd;
+}
+
+html.dark .toc a:hover {
+  color: #ff5533;
+}
+
+html.dark .toc > nav > ul > li > a {
+  color: #f8f9fa;
+}
+
+html.dark .toc ul ul ul a {
+  color: #868e96;
+}

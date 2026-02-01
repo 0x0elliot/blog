@@ -48,3 +48,10 @@ url = "/index.xml"
 
 [taxonomies]
 tag = "tags"
+
+# Table of Contents settings
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = false

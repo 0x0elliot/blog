@@ -180,3 +180,70 @@ blockquote {
   color: #721c24;
 }
 
+/* Table of Contents */
+.toc {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-left: 4px solid #ff3300;
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.toc h2 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #212529;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.toc nav > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.toc ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style: none;
+}
+
+.toc li {
+  margin: 0.5rem 0;
+  line-height: 1.4;
+}
+
+.toc a {
+  color: #495057;
+  text-decoration: none;
+  border-bottom: none;
+  transition: color 0.2s;
+}
+
+.toc a:hover {
+  color: #ff3300;
+  border-bottom: none;
+}
+
+/* Nested levels styling */
+.toc > nav > ul > li > a {
+  font-weight: 500;
+  color: #212529;
+}
+
+.toc ul ul {
+  margin-top: 0.5rem;
+}
+
+.toc ul ul a {
+  font-size: 0.95rem;
+}
+
+.toc ul ul ul a {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+

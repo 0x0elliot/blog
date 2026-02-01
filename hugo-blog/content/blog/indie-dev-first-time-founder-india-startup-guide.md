@@ -127,6 +127,8 @@ Every payment gateway accepting International transactions I tried wanted docume
 
 So I'm writing this for the engineer who's been so heads-down building that they forgot they need a legal entity to actually sell the thing. That was me.
 
+{{< toc >}}
+
 ## Why Indie Devs and First-Time Founders Need a Legal Entity in India
 
 Here's why:
