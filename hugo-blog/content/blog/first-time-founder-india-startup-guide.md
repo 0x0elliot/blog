@@ -14,7 +14,7 @@ images: ["/images/landing.jpg"]
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Indie Dev & First-Time Founder Guide: Register Your Startup in India 2026",
+  "headline": "Indie Dev & First-Time Founder Guide: Register Your Startup in India (2026)",
   "author": {
     "@type": "Person",
     "name": "Aditya",
