@@ -14,6 +14,6 @@ echo "==> Building Hugo site..."
 hugo --minify
 
 echo "==> Deploying to Cloudflare Pages..."
-npx wrangler pages deploy public --project-name=shipfast-blog --commit-dirty=true
+npx wrangler pages deploy public --project-name=shipfast-blog --branch=main --commit-dirty=true
 
 echo "==> Done! Site deployed to https://www.shipfast.blog"

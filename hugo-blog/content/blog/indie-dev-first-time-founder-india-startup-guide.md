@@ -152,7 +152,7 @@ Razorpay rize does say that they charge 1499 + Govt fees for incoperation in [he
 
 **About GST:** You can register GST for free, Feel free to tell the virtual office space provider that you will do it yourself instead of using their GST package and negotiate a good deal with your CA to sort this out instead. It will most likely be cheaper for you overall.
 
-### Step 2: LLP vs Pvt Ltd vs Sole Proprietorship — Which to Choose?
+### Step 2: LLP vs Pvt Ltd vs Sole Proprietorship - Which to Choose?
 
 | Entity Type | Who's involved | When to use it |
 |------------|----------------|----------------|
@@ -208,7 +208,7 @@ This was my biggest bottleneck. Should've done it first. I ended up wasting too 
 
 ### Step 8: Bank account
 
-Call any of the major banks — Axis, HDFC, whatever's convenient. They'll send someone to your door with the paperwork. Takes a few days, and you'll get a debit card for each partner.
+Call any of the major banks - Axis, HDFC, whatever's convenient. They'll send someone to your door with the paperwork. Takes a few days, and you'll get a debit card for each partner.
 
 Two things I wish someone told me:
 
