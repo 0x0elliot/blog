@@ -243,6 +243,8 @@ I SHOULD have just launched with Dodopayments. [DodoPayments](https://dodopaymen
 
 I am just afraid of any regulatory hammers that might come their way. Hoping for the best for them.
 
+Whatever you pick, make sure they have subscription API support. You don't want to find out they don't after you've integrated everything.
+
 ---
 
 ## Startup Registration Cost in India 2026
