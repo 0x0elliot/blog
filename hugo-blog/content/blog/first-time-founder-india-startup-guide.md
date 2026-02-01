@@ -219,6 +219,8 @@ Here's where things got frustrating.
 I had a working product in 2024-2025. I was ready to launch. Then I realized that I had no way to receive subscription money.
 
 After doing some research, I found that:
+
+
 **Stripe:** Invite-only in India. I wasn't invited. I asked a friend of a friend to invite me, but they never responded. It slowed things down more.
 
 **Lemon Squeezy:** Needed business documents. I had none. I tried reaching out to their support team, but they didn't respond. It slowed things down more.
