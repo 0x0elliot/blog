@@ -3,7 +3,9 @@
 
 **/skills/**
 
-**/.env/**
+**/.env
+**/node_modules/
+**/.wrangler/
 
 # Hugo build output
 public/
