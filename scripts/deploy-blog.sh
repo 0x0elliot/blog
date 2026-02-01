@@ -3,6 +3,10 @@ set -e
 
 cd "$(dirname "$0")/../hugo-blog"
 
+# Use Node 20+ for wrangler
+source ~/.nvm/nvm.sh
+nvm use 20 --silent
+
 echo "==> Cleaning old build..."
 rm -rf public
 
