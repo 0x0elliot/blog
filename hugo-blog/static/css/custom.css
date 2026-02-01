@@ -1,0 +1,149 @@
+a {
+    color: #ff3300;
+}
+a:hover {
+    border-bottom: 2px solid #ff3300;
+}
+
+::-moz-selection,
+::selection {
+    background: #ff3300;
+}
+
+blockquote {
+    border-color: #ff3300;
+}
+
+.header nav.social a:hover {
+    color: #ff3300;
+}
+
+.post .draft-label {
+    color: #ff3300;
+    background-color: #fff5f2;
+}
+
+.post .tags a {
+    border: 1px solid #ff3300;
+    color: #ff3300;
+}
+
+.footer a:hover {
+    color: #ff3300;
+}
+
+/* Post wrapper - no flex needed, CTA is fixed */
+.post-wrapper {
+  position: relative;
+}
+
+.post {
+  max-width: 100%;
+}
+
+/* CTA Sidebar - fixed to right edge */
+.cta-sidebar {
+  position: fixed;
+  top: 100px;
+  right: 30px;
+  width: 320px;
+  z-index: 100;
+}
+
+.cta-card {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.cta-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  color: #212529;
+  font-weight: 600;
+}
+
+.cta-card p {
+  margin: 0 0 1.25rem;
+  font-size: 0.95rem;
+  color: #6c757d;
+  line-height: 1.5;
+}
+
+.cta-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.cta-form input,
+.cta-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.cta-form input:focus,
+.cta-form textarea:focus {
+  outline: none;
+  border-color: #495057;
+}
+
+.cta-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.cta-button {
+  width: 100%;
+  padding: 0.875rem 1.25rem;
+  background: #212529;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cta-button:hover:not(:disabled) {
+  background: #495057;
+}
+
+.cta-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.cta-message {
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.cta-message.success {
+  background: #d4edda;
+  color: #155724;
+}
+
+.cta-message.error {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* Hide fixed CTA on smaller screens */
+@media (max-width: 1100px) {
+  .cta-sidebar {
+    position: static;
+    width: 100%;
+    margin-top: 2rem;
+    right: auto;
+    top: auto;
+  }
+}

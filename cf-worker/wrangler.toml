@@ -1,0 +1,16 @@
+name = "blog-cta-api"
+main = "src/index.ts"
+compatibility_date = "2024-09-23"
+
+# Custom domain
+routes = [
+  { pattern = "api.shipfast.blog/*", zone_name = "shipfast.blog" }
+]
+
+[vars]
+# Non-sensitive variables
+FROM_EMAIL = "ShipFast <shipfast@hey.zappush.com>"
+TO_EMAIL = "aditya@zappush.com"
+
+# Add RESEND_API_KEY as a secret:
+# wrangler secret put RESEND_API_KEY

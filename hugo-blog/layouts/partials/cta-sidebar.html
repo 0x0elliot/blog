@@ -1,0 +1,101 @@
+<aside class="cta-sidebar">
+  <div class="cta-card">
+    <h3>Get in Touch</h3>
+    <p>Have questions about starting your company in India? Reach out!</p>
+
+    <form id="cta-form" class="cta-form">
+      <div class="form-group">
+        <input type="text" id="cta-name" name="name" placeholder="Your name" required minlength="2">
+      </div>
+      <div class="form-group">
+        <input type="email" id="cta-email" name="email" placeholder="your@email.com" required>
+      </div>
+      <div class="form-group">
+        <textarea id="cta-message" name="message" placeholder="Your message..." required minlength="10" rows="4"></textarea>
+      </div>
+      <button type="submit" class="cta-button">
+        <span class="button-text">Send Message</span>
+        <span class="button-loading" style="display: none;">Sending...</span>
+      </button>
+    </form>
+
+    <div id="cta-success" class="cta-message success" style="display: none;">
+      Thanks! I'll get back to you soon.
+    </div>
+    <div id="cta-error" class="cta-message error" style="display: none;">
+      Something went wrong. Please try again.
+    </div>
+  </div>
+</aside>
+
+<script>
+(function() {
+  const API_URL = '{{ .Site.Params.ctaApiUrl | default "https://blog-cta-api.YOUR_SUBDOMAIN.workers.dev" }}';
+  const form = document.getElementById('cta-form');
+  const successMsg = document.getElementById('cta-success');
+  const errorMsg = document.getElementById('cta-error');
+
+  // Extract Clarity user ID from _clck cookie
+  function getClarityUserId() {
+    const cookies = document.cookie.split(';');
+    for (let cookie of cookies) {
+      const [name, value] = cookie.trim().split('=');
+      if (name === '_clck' && value) {
+        try {
+          return decodeURIComponent(value).split('^')[0];
+        } catch (e) {
+          return undefined;
+        }
+      }
+    }
+    return undefined;
+  }
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const button = form.querySelector('button');
+    const buttonText = button.querySelector('.button-text');
+    const buttonLoading = button.querySelector('.button-loading');
+
+    // Hide previous messages
+    successMsg.style.display = 'none';
+    errorMsg.style.display = 'none';
+
+    // Show loading state
+    button.disabled = true;
+    buttonText.style.display = 'none';
+    buttonLoading.style.display = 'inline';
+
+    try {
+      const response = await fetch(API_URL + '/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: document.getElementById('cta-name').value,
+          email: document.getElementById('cta-email').value,
+          message: document.getElementById('cta-message').value,
+          clarityUserId: getClarityUserId(),
+          pageUrl: window.location.href
+        })
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        form.style.display = 'none';
+        successMsg.style.display = 'block';
+      } else {
+        errorMsg.textContent = data.error || 'Something went wrong. Please try again.';
+        errorMsg.style.display = 'block';
+      }
+    } catch (err) {
+      errorMsg.style.display = 'block';
+    } finally {
+      button.disabled = false;
+      buttonText.style.display = 'inline';
+      buttonLoading.style.display = 'none';
+    }
+  });
+})();
+</script>

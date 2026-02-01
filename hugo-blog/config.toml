@@ -1,0 +1,50 @@
+baseURL = "https://www.shipfast.blog/"
+languageCode = "en-us"
+title = "shipfast.blog"
+theme = "hugo-ink"
+paginate = 10
+
+copyright = "© 2026"
+
+# Syntax highlighting
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+# SEO
+enableRobotsTXT = true
+
+[params]
+    subtitle = "Businesses and computer science"
+    mode = "auto"
+    featherIconsCDN = true
+    favicon = "/favicon.png"
+    customCSS = "css/custom.css"
+    customDarkCSS = "css/custom-dark.css"
+    # Update this after deploying your worker
+    ctaApiUrl = "https://blog-cta-api.aditya-1bf.workers.dev"
+
+# Navigation
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+# Social links
+[[params.social]]
+name = "Github"
+icon = "github"
+url = "https://github.com/0x0elliot"
+
+[[params.social]]
+name = "Twitter"
+icon = "twitter"
+url = "https://twitter.com/0x0elliot"
+
+[[params.social]]
+name = "RSS"
+icon = "rss"
+url = "/index.xml"
+
+[taxonomies]
+tag = "tags"

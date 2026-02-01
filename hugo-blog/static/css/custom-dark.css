@@ -1,0 +1,57 @@
+html.dark a, html.dark a:hover {
+    color: #ff5533;
+}
+
+html.dark ::-moz-selection,
+html.dark ::selection {
+    background: #ff3300;
+}
+
+html.dark .header nav.social a:hover {
+    color: #ff5533;
+}
+
+html.dark .post .tags a {
+    border: 1px solid #ff5533;
+    color: #ff5533;
+}
+
+/* Dark mode CTA styles */
+html.dark .cta-card {
+  background: #2d2d2d;
+  border-color: #404040;
+}
+
+html.dark .cta-card h3 {
+  color: #f8f9fa;
+}
+
+html.dark .cta-card p {
+  color: #adb5bd;
+}
+
+html.dark .cta-form input,
+html.dark .cta-form textarea {
+  background: #1a1a1a;
+  border-color: #404040;
+  color: #f8f9fa;
+}
+
+html.dark .cta-form input:focus,
+html.dark .cta-form textarea:focus {
+  border-color: #6c757d;
+}
+
+html.dark .cta-form input::placeholder,
+html.dark .cta-form textarea::placeholder {
+  color: #6c757d;
+}
+
+html.dark .cta-button {
+  background: #f8f9fa;
+  color: #212529;
+}
+
+html.dark .cta-button:hover:not(:disabled) {
+  background: #e9ecef;
+}
