@@ -41,39 +41,56 @@ blockquote {
   max-width: 100%;
 }
 
-/* CTA - collapsible at end of post */
+/* CTA - fixed right sidebar, slides in */
 .cta-sidebar {
-  margin-top: 3rem;
-  max-width: 500px;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 100;
+  display: flex;
+  align-items: center;
 }
 
-.cta-toggle {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #212529;
+.cta-tab {
+  background: #212529;
+  color: #fff;
+  border: none;
+  padding: 1rem 0.5rem;
   cursor: pointer;
-  list-style: none;
-  margin-bottom: 0.5rem;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  border-radius: 8px 0 0 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
-.cta-toggle::-webkit-details-marker {
-  display: none;
+.cta-tab:hover {
+  background: #495057;
 }
 
-.cta-toggle::before {
-  content: '+ ';
+.cta-panel {
+  width: 300px;
+  max-height: 80vh;
+  overflow-y: auto;
+  transition: width 0.3s ease, opacity 0.3s ease;
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
 }
 
-details[open] .cta-toggle::before {
-  content: '− ';
+.cta-sidebar.open .cta-panel {
+  width: 300px;
+  opacity: 1;
+  overflow-y: auto;
 }
 
-details.cta-card {
-  border-radius: 12px;
-}
-
-details.cta-card > p {
-  margin-top: 1rem;
+/* Hide on small screens */
+@media (max-width: 768px) {
+  .cta-sidebar {
+    display: none;
+  }
 }
 
 .cta-card {

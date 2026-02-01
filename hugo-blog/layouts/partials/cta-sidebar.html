@@ -1,31 +1,36 @@
-<aside class="cta-sidebar">
-  <details class="cta-card">
-    <summary class="cta-toggle">Get in Touch</summary>
-    <p>Have questions about starting your company in India? Reach out!</p>
+<aside class="cta-sidebar open" id="cta-sidebar">
+  <button class="cta-tab" id="cta-tab" aria-label="Toggle contact form">
+    <span class="cta-tab-text">Contact</span>
+  </button>
+  <div class="cta-panel">
+    <div class="cta-card">
+      <h3>Get in Touch</h3>
+      <p>Have questions about starting your company in India? Reach out!</p>
 
-    <form id="cta-form" class="cta-form">
-      <div class="form-group">
-        <input type="text" id="cta-name" name="name" placeholder="Your name" required minlength="2">
-      </div>
-      <div class="form-group">
-        <input type="email" id="cta-email" name="email" placeholder="your@email.com" required>
-      </div>
-      <div class="form-group">
-        <textarea id="cta-message" name="message" placeholder="Your message..." required minlength="1" rows="4"></textarea>
-      </div>
-      <button type="submit" class="cta-button">
-        <span class="button-text">Send Message</span>
-        <span class="button-loading" style="display: none;">Sending...</span>
-      </button>
-    </form>
+      <form id="cta-form" class="cta-form">
+        <div class="form-group">
+          <input type="text" id="cta-name" name="name" placeholder="Your name" required minlength="2">
+        </div>
+        <div class="form-group">
+          <input type="email" id="cta-email" name="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <textarea id="cta-message" name="message" placeholder="Your message..." required minlength="1" rows="4"></textarea>
+        </div>
+        <button type="submit" class="cta-button">
+          <span class="button-text">Send Message</span>
+          <span class="button-loading" style="display: none;">Sending...</span>
+        </button>
+      </form>
 
-    <div id="cta-success" class="cta-message success" style="display: none;">
-      Thanks! I'll get back to you soon.
+      <div id="cta-success" class="cta-message success" style="display: none;">
+        Thanks! I'll get back to you soon.
+      </div>
+      <div id="cta-error" class="cta-message error" style="display: none;">
+        Something went wrong. Please try again.
+      </div>
     </div>
-    <div id="cta-error" class="cta-message error" style="display: none;">
-      Something went wrong. Please try again.
-    </div>
-  </details>
+  </div>
 </aside>
 
 <script>
@@ -34,6 +39,13 @@
   const form = document.getElementById('cta-form');
   const successMsg = document.getElementById('cta-success');
   const errorMsg = document.getElementById('cta-error');
+  const sidebar = document.getElementById('cta-sidebar');
+  const tab = document.getElementById('cta-tab');
+
+  // Toggle sidebar
+  tab.addEventListener('click', function() {
+    sidebar.classList.toggle('open');
+  });
 
   // Extract Clarity user ID from _clck cookie
   function getClarityUserId() {
