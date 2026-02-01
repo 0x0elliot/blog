@@ -85,6 +85,30 @@ images: ["/images/landing.jpg"]
         "@type": "Answer",
         "text": "No. A virtual office (₹17,000-22,000 for 11 months) provides a registered business address that works for GST registration, bank accounts, and all official purposes. This is the standard approach for most indie devs and first-time founders."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a CA or lawyer to register a startup in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A CA (Chartered Accountant) is highly recommended - they handle DSC, DIN, name approval, incorporation forms, and GST registration. You don't necessarily need a lawyer for basic registration. Services like Razorpay Rize bundle CA services. Expect to pay ₹8,000-15,000 for CA-assisted registration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I register a startup in India without a co-founder?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but your options are limited. Sole Proprietorship works for solo founders but offers no liability protection. LLP requires at least 2 partners. For Pvt Ltd, you need minimum 2 directors (you can add a family member as nominal director). Many solo indie devs start with Sole Proprietorship and convert later."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What documents do I need to register a company in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You need: PAN card, Aadhaar card, passport-size photos, address proof (utility bill/bank statement), Digital Signature Certificate (DSC), and a registered office address (virtual office works). Your CA will guide you through the specific requirements for LLP or Pvt Ltd."
+      }
     }
   ]
 }
