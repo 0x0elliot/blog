@@ -35,7 +35,7 @@ images: ["/images/landing.jpg"]
   "image": "https://www.shipfast.blog/images/landing.jpg",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.shipfast.blog/blog/first-time-founder-india-startup-guide/"
+    "@id": "https://www.shipfast.blog/blog/indie-dev-first-time-founder-india-startup-guide/"
   },
   "articleSection": "Startup Guide",
   "wordCount": 1500
@@ -115,9 +115,7 @@ images: ["/images/landing.jpg"]
 </script>
 {{< /rawhtml >}}
 
-![You, if you stop being a sole proprietor and figure out the compliance :P](/images/landing.jpg)
-
-**TL;DR:** Go LLP if you have a co-founder and want to move fast without raising soon. Pvt Ltd if you're raising VC money and can stomach the compliance. Get a CA, virtual office, and bank account. Total damage: ₹25k-40k. Took me about 3-4 months, but should ideally take less than a month.
+**TL;DR:** Go LLP if you have a co-founder and want to move fast without raising soon. Pvt Ltd if you're raising VC money and can stomach the compliance. Get a CA, virtual office, and bank account. Share capital minimum is ₹1 (not ₹1 lakh, that's outdated, though your CA might default to it out of habit). Total damage: ₹25k-40k. Took me about 3-4 months, but should ideally take less than a month.
 
 ---
 
@@ -208,7 +206,13 @@ This was my biggest bottleneck. Should've done it first. I ended up wasting too 
 
 ### Step 8: Bank account
 
-Call IDFC First, Axis, or HDFC. They send someone to your door with the paperwork. Takes a few days, and you'll get a debit card for each partner.
+Call any of the major banks — Axis, HDFC, whatever's convenient. They'll send someone to your door with the paperwork. Takes a few days, and you'll get a debit card for each partner.
+
+Two things I wish someone told me:
+
+First, you need "share capital" to incorporate. Before 2015, this was ₹1 lakh minimum. Some CAs still quote this number out of habit. The actual minimum today? ₹1. Literally one rupee. Don't let anyone convince you otherwise.
+
+Second, current accounts have minimum balance requirements. This varies by bank, so ask upfront. Nothing worse than getting hit with penalties because nobody mentioned this during onboarding.
 
 ---
 
