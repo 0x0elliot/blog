@@ -115,7 +115,7 @@ images: ["/images/landing.jpg"]
 </script>
 {{< /rawhtml >}}
 
-**TL;DR:** Go LLP if you have a co-founder and want to move fast without raising soon. Pvt Ltd if you're raising VC money and can stomach the compliance. Get a CA, virtual office, and bank account. Share capital minimum is ₹1 (not ₹1 lakh, that's outdated, though your CA might default to it out of habit). Total damage: ₹25k-40k. Took me about 3-4 months, but should ideally take less than a month.
+**TL;DR:** Go LLP if you have a co-founder and want to move fast without raising soon. Pvt Ltd if you're raising VC money and can stomach the compliance. Get a CA, virtual office, and bank account. Share capital minimum is ₹1 (not ₹1 lakh, that's outdated, though your CA might default to it out of habit). Total damage: ₹25k-40k. Took me about 3-4 months, but should ideally take less than a month. Also, get your Startup India certificate - it's free and saves you 3 years of taxes.
 
 ---
 
@@ -280,6 +280,12 @@ What went wrong:
 - **Payment gateway approval dragged on.** Even after registration, getting approved for international transactions took more weeks.
 
 If you know exactly what to do and have everything ready, you can probably finish in a month. Get yourself a professional to help you out for this.
+
+---
+
+## Word of Advice
+
+Get yourself a [Startup India certificate](https://www.startupindia.gov.in/content/sih/en/blockchainverify/about.html). It saves you taxes for 3 financial years out of 10. You get to choose when to redeem it. It's free and worth doing early.
 
 ---
 
