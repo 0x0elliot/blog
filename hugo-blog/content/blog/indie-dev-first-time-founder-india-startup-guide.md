@@ -2,7 +2,7 @@
 title: "Indie Dev & First-Time Founder Guide: Register Your Startup in India (2026)"
 date: 2026-02-01
 draft: false
-description: "First-time founder or indie dev in India? Complete 2026 guide to startup registration: LLP vs Pvt Ltd comparison, costs (₹25-40k), payment gateways for international payments, and timeline."
+description: "Go LLP if you have a co-founder and want to move fast without raising soon. Pvt Ltd if you're raising VC money. Get a CA, virtual office, and bank account. Share capital minimum is ₹1 (not ₹1 lakh). Total: ₹25k-40k."
 keywords: ["startup registration india 2026", "how to register startup in india", "LLP vs Pvt Ltd india startup", "indie dev india company registration", "first time founder india", "payment gateway india international", "startup registration cost india", "company registration checklist india"]
 tags: ["startup", "india", "entrepreneurship", "founder-guide", "indie-dev"]
 author: "Aditya"
@@ -31,7 +31,7 @@ images: ["/images/landing.jpg"]
       "url": "https://www.shipfast.blog/favicon.png"
     }
   },
-  "description": "First-time founder or indie dev in India? Complete 2026 guide to startup registration: LLP vs Pvt Ltd comparison, costs, payment gateways, and timeline.",
+  "description": "Go LLP if you have a co-founder and want to move fast without raising soon. Pvt Ltd if you're raising VC money. Get a CA, virtual office, and bank account. Share capital minimum is ₹1 (not ₹1 lakh). Total: ₹25k-40k.",
   "image": "https://www.shipfast.blog/images/landing.jpg",
   "mainEntityOfPage": {
     "@type": "WebPage",

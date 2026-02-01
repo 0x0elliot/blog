@@ -4,8 +4,4 @@ date: 2026-02-01
 draft: false
 ---
 
-I build open source software and occasionally write about it here.
-
-When I'm not staring at a terminal, you'll find me lifting heavy things or reading philosophy. The Greeks had it right — a strong mind needs a strong body.
-
-This blog is where I think out loud about code, ideas, and everything in between.
+I actively do OSS things. I like philosophy and bodybuilding outside of computer science.
