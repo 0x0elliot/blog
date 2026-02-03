@@ -1,6 +1,7 @@
-<aside class="cta-sidebar open" id="cta-sidebar">
+<aside class="cta-sidebar" id="cta-sidebar">
   <button class="cta-tab" id="cta-tab" aria-label="Toggle contact form">
-    <span class="cta-tab-text">Contact</span>
+    <span class="cta-tab-text-desktop">Contact</span>
+    <span class="cta-tab-text-mobile">Questions? Get in touch</span>
   </button>
   <div class="cta-panel">
     <div class="cta-card">
@@ -41,6 +42,11 @@
   const errorMsg = document.getElementById('cta-error');
   const sidebar = document.getElementById('cta-sidebar');
   const tab = document.getElementById('cta-tab');
+
+  // Open by default on desktop only
+  if (window.innerWidth > 768) {
+    sidebar.classList.add('open');
+  }
 
   // Toggle sidebar
   tab.addEventListener('click', function() {

@@ -82,3 +82,15 @@ html.dark .toc > nav > ul > li > a {
 html.dark .toc ul ul ul a {
   color: #868e96;
 }
+
+/* Mobile dark mode CTA */
+@media (max-width: 768px) {
+  html.dark .cta-tab {
+    border-top-color: #ff5533;
+  }
+
+  html.dark .cta-card {
+    border-top-color: #404040;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.4);
+  }
+}
