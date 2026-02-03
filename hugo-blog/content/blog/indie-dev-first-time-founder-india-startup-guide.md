@@ -237,7 +237,7 @@ After doing some research, I found that:
 
 **Stripe:** Invite-only in India. I wasn't invited. I asked a friend of a friend to invite me, but they never responded. It slowed things down more.
 
-**Lemon Squeezy:** Needed business documents. I had none. I tried reaching out to their support team, but they didn't respond. It slowed things down more.
+**Lemon Squeezy:** I had to apply for verification to get full access to their services. They rejected me because I wanted to build an AI video startup and they assumed it would be NSFW (it wasn't going to be).
 
 **PhonePe, Razorpay, PayU, CCAvenue:** They'd onboard me for domestic payments, but didn't allow international payments without a registered company. My product's target market was international and Indian pricing wouldn't keep the lights on. Talking to each of these vendors slowed things a few more weeks.
 
