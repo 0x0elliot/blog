@@ -237,7 +237,7 @@ After doing some research, I found that:
 
 **Stripe:** Invite-only in India. I wasn't invited. I asked a friend of a friend to invite me, but they never responded. It slowed things down more.
 
-**Lemon Squeezy:** I had to apply for verification to get full access to their services. They rejected me because I wanted to build an AI video startup and they assumed it would be NSFW (it wasn't going to be).
+**Lemon Squeezy (MoR - Merchant of Record):** I had to apply for verification to get full access to their services. They rejected me because I wanted to build an AI video startup and they assumed it would be NSFW (it wasn't going to be).
 
 **PhonePe, Razorpay, PayU, CCAvenue:** They'd onboard me for domestic payments, but didn't allow international payments without a registered company. My product's target market was international and Indian pricing wouldn't keep the lights on. Talking to each of these vendors slowed things a few more weeks.
 
@@ -247,7 +247,9 @@ After doing some research, I found that:
 
 ### Best Payment Gateway for Indie Devs in India
 
-I SHOULD have just launched with Dodopayments. [DodoPayments](https://dodopayments.com) is designed for indie devs in exactly this situation. It's a great solution and I love the team behind it :)
+Go for a MoR (Merchant of Record) with subscription API support. MoRs handle tax compliance, chargebacks, and payment processing for you - they're the actual seller on paper.
+
+I SHOULD have just launched with Dodopayments. [DodoPayments](https://dodopayments.com) (MoR) is designed for indie devs in exactly this situation. It's a great solution and I love the team behind it :)
 
 I am just afraid of any regulatory hammers that might come their way. Hoping for the best for them.
 
