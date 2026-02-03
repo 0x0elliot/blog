@@ -173,6 +173,14 @@ I was super confused what to pick. Lawyer student friends were biased towards Pr
 - [LLP guide](https://www.setindiabiz.com/blog/stepwise-process-for-llp-registration)
 - [Pvt Ltd guide](https://cleartax.in/s/steps-to-register-private-limited-company)
 
+#### Notes from the community - r/indiehackersindia
+
+Also, the community gave some pretty good advice about their experiences:
+
+![Hey thanks for the clarification i too will be going with LLP soon i guess i will taking my brother as cofounder. Also i wanted to let people know, i started with sole proprietorship i didn't wait for registration and all to launch it was very easy with razorpay, matter of fact i have international payment full fledge enabled as well they did it themselves after one of my customer trying to buy from africa failed to pay and i raised a ticket with razorpay and as a solution to that ticket they enabled international payment](/images/razorpay-sole-prop-international.png)
+
+![Good article but is missing a core aspect that many might need to know. Single owner but wants liability protection: OPC. OPC allows protection for a single owner similar to llp. Allows for easy conversion into llp in future. Disadvantage being - mandatory compliance audit irrespective of annual turnover.](/images/opc-advice.png)
+
 ### Step 3: Digital Signature Certificate (DSC)
 
 Government forms need to be digitally signed. Get a DSC from eMudhra, Sify, or NSDL. They'll send you a USB dongle or email certificate.
