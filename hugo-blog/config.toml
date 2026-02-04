@@ -55,3 +55,6 @@ tag = "tags"
     startLevel = 2
     endLevel = 4
     ordered = false
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      taskList = true

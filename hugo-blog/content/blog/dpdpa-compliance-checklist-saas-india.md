@@ -103,6 +103,8 @@ I'm an engineer, not a lawyer. None of this is legal advice, but I know what I'm
 
 DPDPA is India's version of GDPR. It's law, not a certification. Fines go up to 250 crore (~$30M), though I wouldn't expect small businesses to get hit that hard. Still, no need to get into locha over negligence.
 
+{{< toc >}}
+
 ## DPDPA Timeline: Where We Are Now
 
 The act isn't fully enforced yet. [Here's the official timeline](https://www.dpdpact2023.com/Section_1).
@@ -144,7 +146,7 @@ Most of this comes from [here](https://www.dpdpact2023.com/)
 - **Grievance & Escalation**: Users must have a clear grievance mechanism and can escalate unresolved complaints to the Data Protection Board.
 - **Nomination**: Users may nominate another person to exercise their rights in case of death or incapacity.
 
-### Board Powers (Sections 28–34)
+### Data Protection Board Powers (Sections 28–34)
 - **Investigation:** Board can investigate and ask for evidence.
 - **Enforcement:** Board can issue orders and penalties.
 
@@ -168,9 +170,9 @@ Most of this comes from [here](https://www.dpdpact2023.com/)
 
 ### 2. Data Processing & Storage
 - [ ] Are you using data **only for the stated purpose**, Respecting the fact that cross-purpose usage requires fresh consent, As per the law?
-[ ] If using **AWS, GCP, or other cloud services**, Can you confirm that data is **processed securely** (encryption at rest with a good algorithm published from NIST's FIPS & in transit, regular backups, restricted access) AND DPDPA compliant?
-[ ] For **CMS platforms, Or any other third party software processing the user's data**, Can you ensure they **don't process personal data without compliance** and take measures to be compliant to DPDPA themselves, ideally? otherwise, you're liable as the fiduciary.
-[ ] Keep personal data **accurate and complete**, especially if used for decisions affecting users.
+- [ ] If using **AWS, GCP, or other cloud services**, Can you confirm that data is **processed securely** (encryption at rest with a good algorithm published from NIST's FIPS & in transit, regular backups, restricted access) AND DPDPA compliant?
+- [ ] For **CMS platforms, Or any other third party software processing the user's data**, Can you ensure they **don't process personal data without compliance** and take measures to be compliant to DPDPA themselves, ideally? otherwise, you're liable as the fiduciary.
+- [ ] Keep personal data **accurate and complete**, especially if used for decisions affecting users.
 
 ^ An interesting illustration stated for above is: X, an individual, decides to close her savings account with Y, a bank. Y is required by law applicable to banks to maintain the record of the identity of its clients for a period of ten years beyond closing of accounts. Since retention is necessary for compliance with law, Y shall retain X's personal data for the said period.
 
@@ -178,9 +180,9 @@ Most of this comes from [here](https://www.dpdpact2023.com/)
 Remember: DPDP is vague on technical standards, so relying on **ISO 27001 / SOC 2 / NIST-approved algorithms** is safest.
 
 - [ ] Are you implementing reasonable security safeguards for all personal data?
-[ ] Is encryption applied at rest and in transit using strong, recognized algorithms (e.g., NIST-approved)?
-[ ] Have you applied pseudonymization or anonymization for sensitive personal data where feasible?
-[ ] Are access controls in place to restrict data to authorized personnel only?
+- [ ] Is encryption applied at rest and in transit using strong, recognized algorithms (e.g., NIST-approved)?
+- [ ] Have you applied pseudonymization or anonymization for sensitive personal data where feasible?
+- [ ] Are access controls in place to restrict data to authorized personnel only?
 - [ ] Do you maintain audit logs to track who accessed or modified personal data?
 - [ ] Are you conducting regular security testing (e.g., vulnerability scans, penetration tests) to identify and fix risks?
 - [ ] Do your security practices align with recognized standards (ISO 27001, SOC 2, NIST)?
@@ -192,29 +194,29 @@ Remember: DPDP is vague on technical standards, so relying on **ISO 27001 / SOC 
 - [ ] Are you retaining data only as long as legally required, and not beyond that period?
 
 ### 5. Data Principal Rights
-[ ] Can users easily access their personal data that you hold?
-[ ] Can users request correction or completion of inaccurate or incomplete data?
-[ ] Can users request deletion of their personal data or withdraw consent at any time?
+- [ ] Can users easily access their personal data that you hold?
+- [ ] Can users request correction or completion of inaccurate or incomplete data?
+- [ ] Can users request deletion of their personal data or withdraw consent at any time?
 - [ ] Do you have a clear grievance redressal mechanism that handles complaints promptly and effectively (not just an email or portal)?
-[ ] Is it clear who users should contact (DPO or authorised person) for exercising their rights?
-[ ] Can users nominate another person to exercise their rights in case of death or incapacitation?
+- [ ] Is it clear who users should contact (DPO or authorised person) for exercising their rights?
+- [ ] Can users nominate another person to exercise their rights in case of death or incapacitation?
 
 ### 6. Third-Party Processors & Analytics
 - [ ] Are you using valid contracts (example [here](https://www.dpdpa.com/templates/dataprocessingtemplate.html?utm_source=chatgpt.com)) with all third-party processors (e.g., database providers, analytics platforms, email marketing tools)?
 - [ ] Do you avoid sending personal data to non-compliant third-party services, especially for minors?
 - [ ] Are you minimizing third-party tracking and sharing by default?
-[ ] Where feasible, are you self-hosting analytics or similar services to reduce reliance on external processors? Reach out to [me](https://cal.com/zappush/30min) if you need help with it.
+- [ ] Where feasible, are you self-hosting analytics or similar services to reduce reliance on external processors? Reach out to [me](https://cal.com/zappush/30min) if you need help with it.
 - [ ] Do you know where your user data is stored and whether it's sent outside India?
-[ ] Are records of cross-border transfers maintained for audit and potential inspection by the Data Protection Board?
-[ ] Can you confirm if the data processor abroad complies with DPDPA as well?
-[ ] Have you checked whether any government guidelines or restrictions require certain types of data to remain in India, and are you compliant with them?
+- [ ] Are records of cross-border transfers maintained for audit and potential inspection by the Data Protection Board?
+- [ ] Can you confirm if the data processor abroad complies with DPDPA as well?
+- [ ] Have you checked whether any government guidelines or restrictions require certain types of data to remain in India, and are you compliant with them?
 
 ### 7. Monitoring & Compliance
 - [ ] Are you keeping records of user consent and processing purposes for all personal data collected?
 - [ ] Do you have a plan to respond to potential investigations or audits by the Data Protection Board?
 - [ ] Are you actively monitoring for data breaches across all systems handling personal data?
 - [ ] Do you have a breach notification plan to inform both affected users and the Data Protection Board promptly, as required under the law?
-[ ] Are periodic internal compliance checks conducted to ensure adherence to DPDPA obligations?
+- [ ] Are periodic internal compliance checks conducted to ensure adherence to DPDPA obligations?
 
 
 If you're unsure about a tool, plugin, or CMS, **assume it's non-compliant until proven otherwise**. Liability falls on you.
@@ -252,6 +254,8 @@ Depends on how you use it. You need opt-in consent before firing any tracking. T
 You can retain data if required by law. Example: banks must keep records for 10 years. But you can only keep what's legally required, nothing extra.
 
 ## Conclusion
-I have mixed feelings about this law. On one side, The government can't anything well. It is a deeply incompetent organization. On the other, The law itself, even with it's faults and rigidity, tries to argue for consent and clarity. I agree with that ethic, on it's own.
+I have mixed feelings about this law. On one side, the government can't do anything well. It is a deeply incompetent organization. On the other, the law itself, even with its faults and rigidity, tries to argue for consent and clarity. I agree with that ethic, on its own.
 
 This law will clearly make a lot of businesses more difficult to operate but, I hope that the accountable ones shine through. Hoping for liberty and a bright future.
+
+If you don't even have a company, what are you doing here? You should be reading [this](/blog/indie-dev-first-time-founder-india-startup-guide/).

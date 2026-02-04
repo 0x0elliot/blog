@@ -306,3 +306,5 @@ Get yourself a [Startup India certificate](https://www.startupindia.gov.in/conte
 I've been through this, and I'm happy to help other first-time founders and indie devs avoid my mistakes. Reach out: **aditya@zappush.com**
 
 I'll share referrals, answer questions, whatever's useful. I genuinely believe more people should be starting companies, and this guide should help you get there faster than I did.
+
+Oh, and once you have your company set up, make sure you're [DPDPA compliant by 2027](/blog/dpdpa-compliance-checklist-saas-india/).

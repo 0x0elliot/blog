@@ -254,6 +254,30 @@ blockquote {
   color: #721c24;
 }
 
+/* Task list checkboxes */
+ul.task-list,
+ul:has(> li > input[type="checkbox"]) {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.task-list li,
+ul:has(> li > input[type="checkbox"]) > li {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1.5em;
+  position: relative;
+}
+
+ul.task-list li input[type="checkbox"],
+li > input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  margin: 0;
+  cursor: pointer;
+}
+
 /* Table of Contents */
 .toc {
   background: #f8f9fa;
