@@ -11,7 +11,7 @@ echo "==> Cleaning old build..."
 rm -rf public
 
 echo "==> Building Hugo site..."
-hugo --minify
+hugo --minify --buildFuture
 
 echo "==> Deploying to Cloudflare Pages..."
 npx wrangler pages deploy public --project-name=shipfast-blog --branch=main --commit-dirty=true
