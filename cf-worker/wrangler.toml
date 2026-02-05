@@ -9,7 +9,7 @@ routes = [
 
 [vars]
 # Non-sensitive variables
-FROM_EMAIL = "ShipFast <hello@hey.shipfast.blog>"
+FROM_EMAIL = "ShipFast <hello@subscribe.shipfast.blog>"
 TO_EMAIL = "aditya@zappush.com"
 RESEND_AUDIENCE_ID = "517fb3b3-64f4-4d05-9544-8fa31582fcbd"
 
