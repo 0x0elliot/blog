@@ -345,3 +345,105 @@ li > input[type="checkbox"] {
   color: #6c757d;
 }
 
+/* Newsletter signup */
+.newsletter-box {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-left: 4px solid #ff3300;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 3rem 0 2rem;
+}
+
+.newsletter-box h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #212529;
+}
+
+.newsletter-box p {
+  margin: 0 0 1rem;
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+
+.newsletter-form .form-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.newsletter-form input[type="email"] {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.newsletter-form input[type="email"]:focus {
+  outline: none;
+  border-color: #495057;
+}
+
+.newsletter-form button {
+  padding: 0.75rem 1.5rem;
+  background: #212529;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.newsletter-form button:hover:not(:disabled) {
+  background: #495057;
+}
+
+.newsletter-form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.newsletter-message {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.newsletter-message.success {
+  color: #155724;
+}
+
+.newsletter-message.error {
+  color: #721c24;
+}
+
+.newsletter-footer {
+  margin: 0.75rem 0 0;
+  font-size: 0.85rem;
+}
+
+.newsletter-footer a {
+  color: #6c757d;
+  border-bottom: none;
+}
+
+.newsletter-footer a:hover {
+  color: #ff3300;
+  border-bottom: none;
+}
+
+@media (max-width: 480px) {
+  .newsletter-form .form-row {
+    flex-direction: column;
+  }
+
+  .newsletter-form button {
+    width: 100%;
+  }
+}
+

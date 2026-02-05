@@ -9,8 +9,9 @@ routes = [
 
 [vars]
 # Non-sensitive variables
-FROM_EMAIL = "ShipFast <shipfast@hey.zappush.com>"
+FROM_EMAIL = "ShipFast <hello@hey.shipfast.blog>"
 TO_EMAIL = "aditya@zappush.com"
+RESEND_AUDIENCE_ID = "517fb3b3-64f4-4d05-9544-8fa31582fcbd"
 
 # Add RESEND_API_KEY as a secret:
 # wrangler secret put RESEND_API_KEY
