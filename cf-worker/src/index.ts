@@ -292,7 +292,7 @@ function buildWelcomeEmailHtml(email: string): string {
           <tr>
             <td style="padding: 20px 0 0; text-align: center;">
               <p style="margin: 0; font-size: 11px; color: #6c757d;">
-                <a href="https://www.shipfast.blog/#newsletter" style="color: #6c757d; text-decoration: none;">Unsubscribe</a>
+                <a href="https://api.shipfast.blog/api/unsubscribe?email=${encodeURIComponent(email)}" style="color: #6c757d; text-decoration: none;">Unsubscribe</a>
               </p>
             </td>
           </tr>
@@ -506,8 +506,8 @@ export default {
           return jsonResponse({ error: result.error || 'Failed to subscribe' }, 500);
         }
 
-        // Send welcome email (don't await, fire and forget)
-        sendWelcomeEmail(env, email);
+        // Always send welcome email
+        await sendWelcomeEmail(env, email);
 
         return jsonResponse({ success: true, message: 'Subscribed!' });
       } catch (error) {
@@ -516,24 +516,78 @@ export default {
       }
     }
 
-    // Newsletter unsubscribe endpoint
-    if (url.pathname === '/api/unsubscribe' && request.method === 'POST') {
+    // Newsletter unsubscribe endpoint (POST for API, GET for email links)
+    if (url.pathname === '/api/unsubscribe') {
       try {
-        const body = await request.json() as { email: string };
+        let email: string | null = null;
 
-        if (!body.email || !validateEmail(body.email)) {
+        if (request.method === 'GET') {
+          email = url.searchParams.get('email');
+        } else if (request.method === 'POST') {
+          const body = await request.json() as { email: string };
+          email = body.email;
+        }
+
+        if (!email || !validateEmail(email)) {
+          if (request.method === 'GET') {
+            return new Response('<html><body><h1>Invalid email</h1></body></html>', {
+              status: 400,
+              headers: { 'Content-Type': 'text/html', ...corsHeaders },
+            });
+          }
           return jsonResponse({ error: 'Valid email is required' }, 400);
         }
 
-        const result = await unsubscribeFromNewsletter(env, body.email.trim());
+        const result = await unsubscribeFromNewsletter(env, email.trim());
 
         if (!result.success) {
+          if (request.method === 'GET') {
+            return new Response('<html><body><h1>Failed to unsubscribe</h1><p>Please try again.</p></body></html>', {
+              status: 500,
+              headers: { 'Content-Type': 'text/html', ...corsHeaders },
+            });
+          }
           return jsonResponse({ error: result.error || 'Failed to unsubscribe' }, 500);
+        }
+
+        if (request.method === 'GET') {
+          return new Response(`
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unsubscribed</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; background: #f5f5f5; }
+    .box { background: #fff; border: 3px solid #000; padding: 40px; text-align: center; max-width: 400px; }
+    h1 { margin: 0 0 16px; font-size: 24px; }
+    p { margin: 0; color: #666; }
+    a { color: #ff3300; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>You're out.</h1>
+    <p>You've been unsubscribed. <a href="https://www.shipfast.blog">Back to blog</a></p>
+  </div>
+</body>
+</html>
+          `, {
+            status: 200,
+            headers: { 'Content-Type': 'text/html', ...corsHeaders },
+          });
         }
 
         return jsonResponse({ success: true, message: 'Unsubscribed' });
       } catch (error) {
         console.error('Unsubscribe error:', error);
+        if (request.method === 'GET') {
+          return new Response('<html><body><h1>Error</h1><p>Please try again.</p></body></html>', {
+            status: 500,
+            headers: { 'Content-Type': 'text/html', ...corsHeaders },
+          });
+        }
         return jsonResponse({ error: 'Failed to unsubscribe. Please try again.' }, 500);
       }
     }
