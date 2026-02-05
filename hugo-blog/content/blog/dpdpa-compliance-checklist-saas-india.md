@@ -171,7 +171,7 @@ Most of this comes from [here](https://www.dpdpact2023.com/)
 - [ ] Are you clearly telling them why you need it and how users can exercise their rights to withdraw, reach out for grievances, etc?
 - [ ] Are you ensuring **children's data (<18 years)** is not processed without verifiable parental consent.
 - [ ] Are you NOT undertaking tracking or behavioural monitoring of children or targeted advertising directed at children?
-- [ ] Are you using **opt-in consent** for analytics, marketing, or tracking cookies (Google Analytics, Meta Pixel, etc.)?
+- [ ] Are you using **opt-in consent** for analytics, marketing, or tracking cookies (Google Analytics, Meta Pixel, etc.)? This is why Google Analytics asks for cookie banners and has [guides on consent managers](https://support.google.com/analytics/answer/9976101). They have a team of lawyers and engineers working everyday to be compliant with rules like these.
 
 ### 2. Data Processing & Storage
 - [ ] Are you using data **only for the stated purpose**? Cross-purpose usage requires fresh consent.
@@ -253,7 +253,7 @@ Yes. Unlike earlier drafts of the law, DPDPA does NOT have strict data localizat
 Any unauthorized access, disclosure, or loss of personal data. You must notify the Data Protection Board and affected users. Timeline isn't specified yet, but "promptly" is the expectation.
 
 **Is Google Analytics compliant?**
-Depends on how you use it. You need opt-in consent before firing any tracking. The default "implied consent" banners won't cut it. Consider self-hosted alternatives like Plausible or Umami if you want to avoid the headache.
+Depends on how you use it. You need opt-in consent before firing any tracking. The default "implied consent" banners won't cut it. This is why Consent Management Platforms (CMPs) like Cookiebot, OneTrust, and Termly exist. Regulations like DPDPA and GDPR created an entire industry around cookie consent. Consider self-hosted alternatives like Plausible or Umami if you want to avoid the headache.
 
 **What if a user asks to delete their data but I need it for legal/tax reasons?**
 You can retain data if required by law. Example: banks must keep records for 10 years. But you can only keep what's legally required, nothing extra.
