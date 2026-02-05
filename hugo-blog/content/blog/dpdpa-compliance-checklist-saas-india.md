@@ -20,8 +20,8 @@ images: ["/images/landing.jpg"]
     "name": "Aditya",
     "url": "https://twitter.com/0x0elliot"
   },
-  "datePublished": "2026-02-05",
-  "dateModified": "2026-02-05",
+  "datePublished": "2026-02-04",
+  "dateModified": "2026-02-04",
   "publisher": {
     "@type": "Organization",
     "name": "ShipFast Blog",
@@ -113,7 +113,7 @@ The act isn't fully enforced yet. [Here's the official timeline](https://www.dpd
 - **Phase 2 (by Nov 2026):** Operational rules for consent managers and the Data Protection Board. How complaints are filed, how notices are issued, etc.
 - **Phase 3 (~May 2027):** Full enforcement. This is when business owners get fined.
 
-The market has already started preparing. I've noticed a lot of compliance consultants popping up. [Consently](https://www.consently.in), [Scrut](https://www.scrut.io/lp1/scrut-comparison), and others. I also help companies with this stuff. If you need a hand, reach out through the contact form.
+The market has already started preparing. I've noticed a lot of compliance consultants popping up. [Consently](https://www.consently.in), [Scrut](https://www.scrut.io/lp1/scrut-comparison), [DPDP Consultants](https://www.dpdpconsultants.com/), and even [Udemy courses on DPDPA](https://www.udemy.com/topic/dpdpa/). I also help companies with this stuff. If you need a hand, reach out through the contact form.
 
 ## What YOU Need to Know About DPDPA
 
@@ -123,9 +123,11 @@ Most of this comes from [here](https://www.dpdpact2023.com/)
 - **Clear notice:** Explain why you need each item of data before collecting it.
 - **Language:** Available in English or any Eighth Schedule language.
 - **User rights:** Tell users what you collect, why, and how they can access, correct, delete, or withdraw consent.
-- **Grievance contact:** Publish your [Data Protection Officer (DPO)](https://dpo-india.com/Blogs/strategic-role/) or someone from your team. You have 90 days to resolve grievances. If you don't, users can escalate to the Data Protection Board.
+- **Grievance contact:** Publish a [Data Protection Officer (DPO)](https://dpo-india.com/Blogs/strategic-role/). This can be you, an employee, or an external DPO-as-a-service provider. You have 90 days to resolve grievances. If you don't, users can escalate to the Data Protection Board.
 
 ### Core Fiduciary Duties (Sections 6(1)–6(8), 6(10))
+- **No "legitimate interest" basis:** Unlike GDPR, you can't process data just because you have a "legitimate interest." You need consent or a specific exemption. This hits B2B SaaS harder than you'd expect.
+- **Deemed consent:** Some processing is allowed without explicit consent if the user voluntarily provides data (like filling a form) or if it's for employment, public interest, etc. But don't stretch this.
 - **Data minimisation:** Collect only what you need. Don't collect the user's entire contact list if you can't explain what you'd do with it. (This is a loose example from the guidelines themselves :P)
 - **Purpose limitation:** Use data only for stated purposes.
 - **"Reasonable" security:** I found this bit very ambiguous. GDPR at least suggests pseudonymisation, encryption, and regular security testing. DPDPA doesn't get into what algorithms count as "reasonable." From personal experience, auditors for ISO 27001 or SOC 2 often use [NIST's published FIPS algorithms](https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program). I dislike DPDPA's skeleton for the lack of technical care.
@@ -142,7 +144,7 @@ Most of this comes from [here](https://www.dpdpact2023.com/)
 
 ### Data Principal Rights (Sections 11–17)
 - **Access & Correction**: Users can see what personal data is processed, why, with whom it is shared, and request correction, updating, or deletion where applicable.
-- **Consent Control**: Users can withdraw consent at any time; processing must stop and data deleted unless legally required to retain it.
+- **Consent Control**: Users can withdraw consent at any time; processing must stop and data deleted unless legally required to retain it. **Withdrawal must be as easy as giving consent.**
 - **Grievance & Escalation**: Users must have a clear grievance mechanism and can escalate unresolved complaints to the Data Protection Board.
 - **Nomination**: Users may nominate another person to exercise their rights in case of death or incapacity.
 
@@ -151,7 +153,10 @@ Most of this comes from [here](https://www.dpdpact2023.com/)
 - **Enforcement:** Board can issue orders and penalties.
 
 ### Penalties & Appeals (Sections 36–37)
-- **Fines:** Proportional to the violation. Up to 250 crore.
+- **Fines are tiered:**
+  - Up to ₹50 crore for children's data violations
+  - Up to ₹200 crore for security breach failures
+  - Up to ₹250 crore for the most serious violations
 - **Appeals:** Decisions can be appealed.
 
 ### Rule-making (Section 44(2))
@@ -160,18 +165,18 @@ Most of this comes from [here](https://www.dpdpact2023.com/)
 ## DPDPA Compliance Checklist
 
 ### 1. Data Collection and Consent
-"Child" as per DPDPA: Person under 18 years of age or a person with disability who has a lawful guardian obtain.
+"Child" as per DPDPA: Anyone under 18, or a person with disability who has a lawful guardian.
 
-- [ ] Are you collecting **only** what you need without ambigious permissions?
-- [ ] Are you clearly telling them why you need it and how users can exercise their "rights" to withdraw, reach out for griences etc?
+- [ ] Are you collecting **only** what you need without ambiguous permissions?
+- [ ] Are you clearly telling them why you need it and how users can exercise their rights to withdraw, reach out for grievances, etc?
 - [ ] Are you ensuring **children's data (<18 years)** is not processed without verifiable parental consent.
 - [ ] Are you NOT undertaking tracking or behavioural monitoring of children or targeted advertising directed at children?
 - [ ] Are you using **opt-in consent** for analytics, marketing, or tracking cookies (Google Analytics, Meta Pixel, etc.)?
 
 ### 2. Data Processing & Storage
-- [ ] Are you using data **only for the stated purpose**, Respecting the fact that cross-purpose usage requires fresh consent, As per the law?
-- [ ] If using **AWS, GCP, or other cloud services**, Can you confirm that data is **processed securely** (encryption at rest with a good algorithm published from NIST's FIPS & in transit, regular backups, restricted access) AND DPDPA compliant?
-- [ ] For **CMS platforms, Or any other third party software processing the user's data**, Can you ensure they **don't process personal data without compliance** and take measures to be compliant to DPDPA themselves, ideally? otherwise, you're liable as the fiduciary.
+- [ ] Are you using data **only for the stated purpose**? Cross-purpose usage requires fresh consent.
+- [ ] If using **AWS, GCP, or other cloud services**, can you confirm that data is **processed securely** (encryption at rest and in transit, regular backups, restricted access)?
+- [ ] For **CMS platforms or any other third party software processing user data**, can you ensure they take measures to be DPDPA compliant? Otherwise, you're liable as the fiduciary.
 - [ ] Keep personal data **accurate and complete**, especially if used for decisions affecting users.
 
 ^ An interesting illustration stated for above is: X, an individual, decides to close her savings account with Y, a bank. Y is required by law applicable to banks to maintain the record of the identity of its clients for a period of ten years beyond closing of accounts. Since retention is necessary for compliance with law, Y shall retain X's personal data for the said period.
@@ -202,7 +207,7 @@ Remember: DPDP is vague on technical standards, so relying on **ISO 27001 / SOC 
 - [ ] Can users nominate another person to exercise their rights in case of death or incapacitation?
 
 ### 6. Third-Party Processors & Analytics
-- [ ] Are you using valid contracts (example [here](https://www.dpdpa.com/templates/dataprocessingtemplate.html?utm_source=chatgpt.com)) with all third-party processors (e.g., database providers, analytics platforms, email marketing tools)?
+- [ ] Are you using valid contracts (example [here](https://www.dpdpa.com/templates/dataprocessingtemplate.html)) with all third-party processors (e.g., database providers, analytics platforms, email marketing tools)?
 - [ ] Do you avoid sending personal data to non-compliant third-party services, especially for minors?
 - [ ] Are you minimizing third-party tracking and sharing by default?
 - [ ] Where feasible, are you self-hosting analytics or similar services to reduce reliance on external processors? Reach out to [me](https://cal.com/zappush/30min) if you need help with it.
@@ -230,7 +235,7 @@ Yes, if you're processing personal data of people in India. Doesn't matter where
 Anything that can identify a person: name, email, phone, IP address, device IDs, location data. If you can trace it back to a specific human, it's personal data.
 
 **Do I need a Data Protection Officer (DPO)?**
-The law requires you to publish contact information for someone who handles data protection queries and grievances. For small SaaS, this can be you or a co-founder. Larger companies designated as "Significant Data Fiduciaries" have stricter requirements.
+The law requires you to publish contact information for someone who handles data protection queries and grievances. This can be you, a co-founder, an employee, or an external DPO-as-a-service provider. Larger companies designated as "Significant Data Fiduciaries" have stricter requirements.
 
 **What's a Data Processing Agreement (DPA)?**
 A contract between you and any third party that processes your users' data. Your database provider, email marketing tool, analytics platform, payment gateway, all of them. Many big vendors (AWS, Stripe, etc.) already have standard DPAs. Smaller tools might not. Ask them.
@@ -242,7 +247,7 @@ Yes. If you're storing data about employees or contacts of your business clients
 You'll need to ensure it meets compliance standards. If you don't have proper consent records, you may need to re-obtain consent or delete the data.
 
 **Can I transfer data outside India?**
-Yes, to most countries. The government will publish a list of restricted countries where transfer is not allowed. As of now, this list hasn't been finalized.
+Yes. Unlike earlier drafts of the law, DPDPA does NOT have strict data localization. The government will publish a "negative list" of restricted countries where transfer is blocked. As of now, this list hasn't been finalized. For transfers to allowed countries, use encryption and have proper contractual clauses with the processor.
 
 **What triggers a breach notification?**
 Any unauthorized access, disclosure, or loss of personal data. You must notify the Data Protection Board and affected users. Timeline isn't specified yet, but "promptly" is the expectation.
